@@ -18,8 +18,6 @@ function onPlaying(e) {
 };
 const currentTime = localStorage.getItem(STORAGE_KEY);
 
-// const startTime = JSON.parse(currentTime );
-// console.log(startTime);
 
  player.setCurrentTime(currentTime).then(function(seconds) {
  }).catch(function(error) {
