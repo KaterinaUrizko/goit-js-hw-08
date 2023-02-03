@@ -6,7 +6,6 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
-
 const imageContainer = document.querySelector('.gallery')
  
 const galleryMarkup = createGalleryMarkup(galleryItems);
@@ -28,15 +27,5 @@ function createGalleryMarkup(images) {
     }).join('');
 }
 imageContainer.insertAdjacentHTML('beforeend', galleryMarkup);
-imageContainer.addEventListener('click', OnImageContainerClick);
 
-function OnImageContainerClick(e) {
- 
-    // const isGalleryImage = e.target.classList.contains('gallery__image');
-    // if (!isGalleryImage) {
-    //     return;
-    // } else
-    // {
-            const lightbox = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250 });
-    // }
-}
+new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250 });
