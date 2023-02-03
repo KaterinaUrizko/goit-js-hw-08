@@ -32,11 +32,11 @@ imageContainer.addEventListener('click', OnImageContainerClick);
 
 function OnImageContainerClick(e) {
  
-    const isGalleryImage = e.target.classList.contains('gallery__image');
-    if (!isGalleryImage) {
-        return;
-    } else
-    {
+    // const isGalleryImage = e.target.classList.contains('gallery__image');
+    // if (!isGalleryImage) {
+    //     return;
+    // } else
+    // {
             const lightbox = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250 });
-    }
+    // }
 }
