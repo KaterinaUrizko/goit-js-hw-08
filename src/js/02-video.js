@@ -18,16 +18,17 @@ function onPlaying(e) {
 };
 const currentTime = localStorage.getItem(STORAGE_KEY);
 
+player.setCurrentTime(currentTime || 0);
 
- player.setCurrentTime(currentTime).then(function(seconds) {
- }).catch(function(error) {
-     switch (error.name) {
-       case 'RangeError':
-            break;
-        default:
-            break;
-     }
- });
+//  player.setCurrentTime(currentTime).then(function(seconds) {
+//  }).catch(function(error) {
+//      switch (error.name) {
+//        case 'RangeError':
+//             break;
+//         default:
+//             break;
+//      }
+//  });
 
 
 
