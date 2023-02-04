@@ -60,13 +60,3 @@ refs.form.elements.email.value = storagedData?.email || '';
     }
 }
   
-// function onFormInput(e) {
-//   formData[e.target.name] = e.target.value;
-
-
-// }
-
-
-// const dataFromLocalStorage = JSON.parse(localStorage.getItem(LOCAL_KEY));
-// form.elements.email.value = dataFromLocalStorage?.email || '';
-// form.elements.message.value = dataFromLocalStorage?.message || '';
