@@ -17,8 +17,7 @@ const formData = {};
 const storagedData = JSON.parse(localStorage.getItem(STORAGE_KEY))
 
 
-  refs.form.elements.email.value = storagedData?.email || '';
-  refs.form.elements.message.value = storagedData?.message || ''; 
+
 
 // populateTextarea();
 
@@ -31,6 +30,9 @@ function onFormInput(event) {
   );
 }
 
+
+  refs.form.elements.email.value = storagedData?.email || '';
+  refs.form.elements.message.value = storagedData?.message || ''; 
 
 function onFormSubmit(event) {
 
